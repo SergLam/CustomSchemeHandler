@@ -66,13 +66,16 @@
             xhr.send(JSON.stringify({"name" : "test2", "price" : "2222"}));
         }
     </script>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
     <body>
         <h2>Test page</h2>
         <img src="assets://test.jpg"></img>
-        <div id="button" onclick="getData()">Get data</div>
-        <div id="button" onclick="insertData()">Insert data</div>
-        <div id="button" onclick="getCoreData()">Get Coredata</div>
-        <div id="button" onclick="insertCoreData()">Insert CoreData</div>
-        <div id="results"></div>
+        <div id="get_data_button" class="button" onclick="getData()">Get data</div>
+        <div id="insert_data_button" class="button" onclick="insertData()">Insert data</div>
+        <div id="get_core_data_button" class="button" onclick="getCoreData()">Get Coredata</div>
+        <div id="insert_core_data_button" class="button" onclick="insertCoreData()">Insert CoreData</div>
+        <div id="results" class="container"></div>
     </body>
 </html>
